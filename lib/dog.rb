@@ -12,12 +12,15 @@ class Dog
     @@all
   end
   def self.print_all
-    @@all.each do |name|
-      puts name
+    @@all.each do 
+      puts @name
     end
   end
 
   def self.clear_all
     @@all.clear
+  end
+  def name
+    @name
   end
 end
