@@ -1,6 +1,9 @@
 # Add your code here
 class Dog
   @@all = []
+  def save
+    @@all << self
+  end
   def initialize(name)
     @name = name
     save
@@ -13,9 +16,7 @@ class Dog
       puts name
     end
   end
-  def save
-    @@all << self
-  end
+  
   def self.clear_all
     clear(@@all)
   end
